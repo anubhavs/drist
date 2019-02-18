@@ -1,6 +1,13 @@
 # DRIST
 Driving Route Internet Speed Test: Created something hacky with python, iperf and AWS EC2 Machine. Essentially Macbook runs iperf to AWS EC2 Machine every 10s. While phone logs location through SensorLog app. All this time Macbook is tethered to phone's cellular network (e.g. AT&T).
 
+## Example output
+* Green is mbps
+* Yellow is kbps
+* Black is no connectivity
+
+![drist output](screenshot.png)
+
 ## Prerequisits
 * Macbook (or another laptop)
 * AWS EC2 machine (or any other server)
@@ -35,5 +42,5 @@ When done. Stop logging SensorLog (tap X). Copy the generated log file.
 #### Step 6
 Stop iperf on Macbook, and scp logs from AWS EC2 Machine.
 
-### Step 7
-Open Run `create_map.py` and set values of constants. Run `python3 create_map.py` to generate `output_map.html`.
+#### Step 7
+Open `create_map.py` and set values of constants. Run `python3 create_map.py` to generate `output_map.html`.
