@@ -4,4 +4,4 @@ gmplot==1.2.0
 idna==2.8
 numpy==1.16.1
 requests==2.21.0
-urllib3==1.24.1
+urllib3==1.24.2
